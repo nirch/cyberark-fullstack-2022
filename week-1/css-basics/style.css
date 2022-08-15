@@ -1,0 +1,24 @@
+
+p {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+
+#blue-font {
+    color: blue;
+}
+
+.red-font {
+    color: red;
+}
+
+/* 
+div > p > span
+
+
+p > span */
+
