@@ -6,7 +6,11 @@ function foo() {
     console.log(a);
 }
 
-foo();
+const foo2 = function() {
+    console.log("foo2")
+}
+
+foo2();
 
 
 
@@ -120,7 +124,84 @@ console.log(p1.age)        // 80
 
 const numArr2 = [30, 10, 20];
 numArr2[0] = 20;    // ok
-numArr2 = [20]      // error
+// numArr2 = [20]      // error
+
+
+
+let person1 = {
+    name: "John",
+    age: 25
+}
+let person2 = {
+    name: "Sarah",
+    age: 30
+}
+let person3 = {
+    name: "Dave",
+    age: 43
+}
+
+const people = [person1, person2, person3];
+
+
+let sum = 0;
+for (let i = 0; i < people.length; i++) {
+    sum += people[i].age;
+}
+console.log(sum/people.length);
+
+
+
+// for of
+sum = 0;
+for (const person of people) {
+    sum += person.age;
+}
+console.log(sum/people.length);
+
+console.log(people);
+
+// for in
+for (const key in person1) {
+    // console.log(key + ": " + person1[key]);
+    console.log(`${key}: ${person1[key]}`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
 
-p {
+
+.basic-example > p {
     color: blue;
 }
 
-p {
+basic-example > p {
     color: green;
 }
 
@@ -22,3 +26,33 @@ div > p > span
 
 p > span */
 
+.box-model > p {
+    border: solid 10px lightgray;
+    background-color: lightgreen;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.display > p {
+    width: 300px;
+    border: solid;
+}
+
+
+.display > .row > div {
+    width: 50%;
+    border: solid;
+    height: 100px;
+    display: inline-block;
+}
+
+.hide {
+    display: none !important;
+    /* visibility: hidden; */
+}
+
+
+.display > .row > div:hover {
+    background-color: aqua;
+}
