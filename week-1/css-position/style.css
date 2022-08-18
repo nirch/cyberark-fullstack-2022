@@ -1,0 +1,81 @@
+
+div.static {
+    position: static; /* This is the default */
+    border: solid red;
+}
+
+div.relative {
+    position: relative;
+    top: 15px;
+    left: 15px; 
+    border: solid blue;
+}
+
+div.fixed {
+    position: fixed;
+    /* width: 100%; */
+    border: solid green;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+div.parent {
+    position: relative;
+    border: solid purple;
+    height: 400px;
+}
+
+div.absolute {
+    position: absolute;
+    border: solid orange;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+div.img-parent {
+    position: relative;
+    border: solid;
+    /* display: inline-block; */
+    /* width: max-content; */
+    width: 500px;
+    margin: 0 auto; 
+}
+
+div.img-parent > img {
+    width: 100%;
+    display: block;
+}
+
+div.img-parent > div {
+    position: absolute;
+    background-color: lightgray
+}
+
+div.img-parent > div.tl {
+    top: 0;
+    left: 0;
+}
+
+div.img-parent > div.tr {
+    top: 0;
+    right: 0;
+}
+div.img-parent > div.br {
+    bottom: 0;
+    right: 0;
+}
+div.img-parent > div.bl {
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
