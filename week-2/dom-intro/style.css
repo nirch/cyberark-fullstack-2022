@@ -1,0 +1,15 @@
+.red-font {
+    color: red;
+}
+
+.blue-font {
+    color: blue;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.hide {
+    display: none !important;
+}
