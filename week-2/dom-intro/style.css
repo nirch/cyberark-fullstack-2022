@@ -13,3 +13,30 @@
 .hide {
     display: none !important;
 }
+
+
+
+#outer {
+    display: inline-block;
+    border: solid;
+    padding: 20px;
+}
+
+#inner {
+    width: 200px;
+    height: 300px;
+    background-color: blueviolet;
+}
+
+#grand-parent {
+    position: relative;
+}
+
+#outer-sibling {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+}
