@@ -27,20 +27,38 @@ getNumberOfBreeds(result => {
   console.log(result);
 });
 
-function getNumberOfBreeds() {
-  return new Promise((resolve, reject) => {
-    axios
-      .get('https://dog.ceo/api/breeds/list/all')
-      .then(response => {
-        resolve(Object.keys(response.data.message).length);
-      })
-      .catch(err => {
-        //
-        reject(err);
-      });
-  });
+// function getNumberOfBreeds() {
+//   return new Promise((resolve, reject) => {
+//     axios
+//       .get('https://dog.ceo/api/breeds/list/all')
+//       .then(response => {
+//         resolve(Object.keys(response.data.message).length);
+//       })
+//       .catch(err => {
+//         //
+//         reject(err);
+//       });
+//   });
+// }
+
+async function getNumberOfBreeds() {
+  const response = await axios.get('https://dog.ceo/api/breeds/list/all');
+  // if (...) {
+  //   throw new Error({})  // this is like reject
+  // }
+  return Object.keys(response.data.message).length;
 }
 
 getNumberOfBreeds().then(numOfBreeds => {
   console.log(numOfBreeds);
 });
+
+(async function () {
+  const numOfBreeds = await getNumberOfBreeds();
+  console.log(numOfBreeds);
+})();
+
+// const numOfBreeds = await getNumberOfBreeds();
+// getNumberOfBreeds().then(numOfBreeds => {
+//   console.log(numOfBreeds);
+// });
