@@ -1,0 +1,12 @@
+[
+    {
+        "userId": 1,
+        "movieId": 1,
+        "review": 5
+    },
+    {
+        "userId": 2,
+        "movieId": 1,
+        "review": 4
+    }
+]

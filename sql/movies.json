@@ -1,0 +1,25 @@
+[
+    {
+        "movieId": 1,
+        "title": "Pulp Fiction",
+        "runtime": 120
+    },
+    {
+        "movieId": 2,
+        "title": "Anigma",
+        "runtime": 111
+    },
+    {
+        "movieId": 2,
+        "title": "Anigma",
+        "runtime": "111",
+        "bla": "bla",
+        "reviews": [
+            {
+                "userId": 5,
+                "review": 4 
+            }
+        ],
+        "avgScore": 4.5
+    }
+]
